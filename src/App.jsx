@@ -4,13 +4,12 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer'
 import CartProvider, { CartContext } from './components/CartContext/CartContext'
-import { useContext } from 'react'
 import Cart from './components/Cart/Cart'
 
 function App() {
   return (
     <CartProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="/e-commerce-api">
     <NavBar/>
     <Routes>
       <Route path="/" element={<ItemListContainer/>}/>
