@@ -9,10 +9,10 @@ import Cart from './components/Cart/Cart'
 function App() {
   return (
     <CartProvider>
-    <BrowserRouter basename="/e-commerce-api">
+    <BrowserRouter>
     <NavBar/>
     <Routes>
-      <Route path="/" element={<ItemListContainer/>}/>
+      <Route path="/e-commerce-ap-" element={<ItemListContainer/>}/>
       <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
       <Route path='/product/:productId' element={<ItemDetailContainer/>}/>
       <Route path='/cart' element={<Cart/>}></Route>
