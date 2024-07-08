@@ -8,7 +8,7 @@ import { Link, NavLink } from 'react-router-dom';
 function NavBar() {
   return (
     <header className="NavBar">
-  <Link to="/e-commerce-ap-">
+  <Link to="/">
   <img width={100} src="/logo.png" alt="logo" />
   </Link>
     <NavLink to="/category/men's clothing">ropa</NavLink>
