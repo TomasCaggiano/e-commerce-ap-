@@ -7,7 +7,7 @@ function Item  ({producto}) {
 
   return (
     <div className='card' >
-      <Link to={`/product/${producto.id}`}>
+      <Link to={`e-commerce-ap-/product/${producto.id}`}>
         <img src={producto.image} alt="" />
         <h3>{producto.title}</h3>
         <p>{producto.description}</p>

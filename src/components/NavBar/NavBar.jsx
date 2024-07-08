@@ -8,13 +8,13 @@ import { Link, NavLink } from 'react-router-dom';
 function NavBar() {
   return (
     <header className="NavBar">
-  <Link to="/">
+  <Link to="e-commerce-ap-/">
   <img width={100} src="/logo.png" alt="logo" />
   </Link>
-    <NavLink to="/category/men's clothing">ropa</NavLink>
-    <NavLink to="/category/electronics">electronica</NavLink>
-    <NavLink to="/category/jewelery">jewelery</NavLink>
-  <NavLink to="cart">carrito</NavLink>
+    <NavLink to="e-commerce-ap-/category/men's clothing">ropa</NavLink>
+    <NavLink to="e-commerce-ap-/category/electronics">electronica</NavLink>
+    <NavLink to="e-commerce-ap-/category/jewelery">jewelery</NavLink>
+  <NavLink to="e-commerce-ap-/cart">carrito</NavLink>
 </header>
   );
 }
