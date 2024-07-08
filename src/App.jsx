@@ -7,9 +7,11 @@ import CartProvider, { CartContext } from './components/CartContext/CartContext'
 import Cart from './components/Cart/Cart'
 
 function App() {
+  const basename = process.env.NODE_ENV === 'production' ? '/e-commerce-api' : '/';
+
   return (
     <CartProvider>
-    <BrowserRouter basename="/e-commerce-api">
+    <BrowserRouter basename={basename}>
     <NavBar/>
     <Routes>
       <Route path="/" element={<ItemListContainer/>}/>
