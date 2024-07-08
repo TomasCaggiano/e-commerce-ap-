@@ -1,0 +1,18 @@
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.buttons button{
+    border-radius: 15%;
+    height: 2rem;
+    width: 2rem;
+}
+.buttons h3 {
+    height: 3rem;
+    width: 3rem;
+    padding-left: 1rem;
+    
+}
+.add{
+    margin: auto;
+}
