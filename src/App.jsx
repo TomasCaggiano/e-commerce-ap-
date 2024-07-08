@@ -7,7 +7,7 @@ import CartProvider, { CartContext } from './components/CartContext/CartContext'
 import Cart from './components/Cart/Cart'
 
 function App() {
-  const basename = process.env.NODE_ENV === 'production' ? '/e-commerce-api' : '/';
+  const basename = process.env.NODE_ENV === 'production' ? '/e-commerce-ap' : '/';
 
   return (
     <CartProvider>
