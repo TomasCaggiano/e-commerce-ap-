@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://tomascaggiano.github.io/https://github.com/TomasCaggiano/e-commerce-ap-",
   
   "scripts": {
     "dev": "vite",
