@@ -9,13 +9,13 @@ import '../images/logo.png'
 function NavBar() {
   return (
     <header className="NavBar">
-  <Link to="/e-commerce-ap-/">
+  <Link to="/">
   <img width = {25} src='https://thumbs.dreamstime.com/z/dise%C3%B1o-vectorial-de-logotipo-negro-nike-sports-logo-vector-listo-para-imprimir-ilustraciones-183282273.jpg?ct=jpeg' alt="logo" />
   </Link>
-    <NavLink to="/e-commerce-ap-/category/men's clothing">ropa</NavLink>
-    <NavLink to="/e-commerce-ap-/category/electronics">electronica</NavLink>
-    <NavLink to="/e-commerce-ap-/category/jewelery">jewelery</NavLink>
-  <NavLink to="/e-commerce-ap-/cart">carrito</NavLink>
+    <NavLink to="/category/men's clothing">ropa</NavLink>
+    <NavLink to="/category/electronics">electronica</NavLink>
+    <NavLink to="/category/jewelery">jewelery</NavLink>
+  <NavLink to="/cart">carrito</NavLink>
 </header>
   );
 }
