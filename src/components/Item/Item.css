@@ -15,14 +15,14 @@
 
     .card img {
         width: 100%;
-        height: 10rem; /* Altura fija para todas las imágenes */
-        object-fit: cover; /* Para ajustar la imagen dentro de su contenedor */
+        height: 10rem;
+        object-fit: cover;
         border-radius: 10px;
         margin-bottom: 10px;
     }
 
     .card h3 {
-        font-size: 1rem; /* Tamaño de fuente pequeño */
+        font-size: 1rem;
         height: 2rem;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -31,26 +31,24 @@
     }
 
     .card p {
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        font-size: 0.8rem;
         line-height: 1.5;
-        overflow-y: auto; /* Permite que el párrafo sea scrollable verticalmente */
-        max-height: 6rem; /* Máximo de seis líneas antes de hacer scroll */
+        overflow-y: auto;
+        max-height: 6rem;
         margin-bottom: 10px;
     }
 
     .card a {
-        font-size: 0.9rem; /* Tamaño de fuente pequeño */
+        font-size: 0.9rem;
         color: black;
         text-decoration: none;
     }
 
-    a:visited {
+    .card a:visited {
         color: inherit;
-        text-decoration: none;
     }
 
-    a:hover {
-        color: inherit;
+    .card a:hover {
         text-decoration: underline;
         transition: 0.3s;
     }
@@ -73,14 +71,14 @@
 
     .card img {
         width: 100%;
-        height: 10rem; /* Altura fija para todas las imágenes */
-        object-fit: cover; /* Para ajustar la imagen dentro de su contenedor */
+        height: 10rem;
+        object-fit: cover;
         border-radius: 10px;
         margin-bottom: 10px;
     }
 
     .card h3 {
-        font-size: 1rem; /* Tamaño de fuente pequeño */
+        font-size: 1rem;
         height: 2rem;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -89,146 +87,24 @@
     }
 
     .card p {
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        font-size: 0.8rem;
         line-height: 1.5;
-        overflow-y: auto; /* Permite que el párrafo sea scrollable verticalmente */
-        max-height: 6rem; /* Máximo de seis líneas antes de hacer scroll */
+        overflow-y: auto;
+        max-height: 6rem;
         margin-bottom: 10px;
     }
 
     .card a {
-        font-size: 0.9rem; /* Tamaño de fuente pequeño */
+        font-size: 0.9rem;
         color: black;
         text-decoration: none;
     }
 
-    a:visited {
+    .card a:visited {
         color: inherit;
-        text-decoration: none;
     }
 
-    a:hover {
-        color: inherit;
-        text-decoration: underline;
-        transition: 0.3s;
-    }
-
-    br {
-        height: 5px;
-        background-color: red;
-    }
-}
-@media (max-width: 768px) {
-    .card {
-        flex: 1 1 200px;
-        background-color: #f8f8f8;
-        padding: 10px;
-        border-radius: 10px;
-        border: 1px solid #ccc;
-        margin-bottom: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card img {
-        width: 100%;
-        height: 10rem; /* Altura fija para todas las imágenes */
-        object-fit: cover; /* Para ajustar la imagen dentro de su contenedor */
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-
-    .card h3 {
-        font-size: 1rem; /* Tamaño de fuente pequeño */
-        height: 2rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin-bottom: 10px;
-    }
-
-    .card p {
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
-        line-height: 1.5;
-        overflow-y: auto; /* Permite que el párrafo sea scrollable verticalmente */
-        max-height: 6rem; /* Máximo de seis líneas antes de hacer scroll */
-        margin-bottom: 10px;
-    }
-
-    .card a {
-        font-size: 0.9rem; /* Tamaño de fuente pequeño */
-        color: black;
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: inherit;
-        text-decoration: underline;
-        transition: 0.3s;
-    }
-}
-
-@media (min-width: 768px) {
-    .card {
-        flex: 1 1 200px;
-        background-color: #f8f8f8;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        border: 1px solid #ccc;
-        max-width: 13rem;
-        margin: 5px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card img {
-        width: 100%;
-        height: 10rem; /* Altura fija para todas las imágenes */
-        object-fit: cover; /* Para ajustar la imagen dentro de su contenedor */
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-
-    .card h3 {
-        font-size: 1rem; /* Tamaño de fuente pequeño */
-        height: 2rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin-bottom: 10px;
-    }
-
-    .card p {
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
-        line-height: 1.5;
-        overflow-y: auto; /* Permite que el párrafo sea scrollable verticalmente */
-        max-height: 6rem; /* Máximo de seis líneas antes de hacer scroll */
-        margin-bottom: 10px;
-    }
-
-    .card a {
-        font-size: 0.9rem; /* Tamaño de fuente pequeño */
-        color: black;
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: inherit;
+    .card a:hover {
         text-decoration: underline;
         transition: 0.3s;
     }

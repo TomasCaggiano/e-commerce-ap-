@@ -1,5 +1,5 @@
 .item-list-container {
     display: flex; 
     justify-content: space-between; 
-    min-height: 30rem; 
+    min-height: 50rem; 
 }
