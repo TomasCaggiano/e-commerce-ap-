@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import CountButtons from '../Buttons/CountButtons';
 import { CartContext } from '../CartContext/CartContext';
+import './ItemDetailContainer.css'
 
 function ItemDetailContainer() {
   const { productId } = useParams();
@@ -16,18 +16,21 @@ function ItemDetailContainer() {
   }, [productId]);
 
   if (!product) {
-    return <p>Loading product...</p>;
+    return <p className='loading'>Loading product...</p>;
   }
 
   return (
+    <div className='detail'>
     <div className="product-detail">
       <img src={product.image} alt={product.title} />
+      <div>
       <h1>{product.title}</h1>
       <p>{product.description}</p>
-      <p>Price: ${product.price}</p>
-      <CountButtons />
-      <button onClick={() => addToCart(product)}>Add to Cart</button>
+      <p className='precio'>Price: ${product.price}</p>
+      </div>
     </div>
+      <button onClick={() => addToCart(product)}>Add to Cart</button>
+  </div>
   );
 }
 

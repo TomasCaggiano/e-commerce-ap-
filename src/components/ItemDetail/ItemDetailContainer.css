@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .detail {
+        flex-direction: column; 
+        padding: 10px; 
+        min-height: 30rem;
+    }
+
+    .detail button {
+        margin-left: 35%; 
+    }
+
+    .precio {
+        margin-left: 35%; 
+    }
+}
+
+@media (min-width: 768px) {
+    .product-detail {
+        justify-content: space-between; 
+        align-items: center; 
+        flex-direction: row; 
+        display: flex; 
+        padding: 1rem; 
+    }
+
+    .loading {
+        min-height: 30rem; 
+    }
+
+    .product-detail img {
+        padding-right: 1rem; 
+    }
+
+    .detail {
+        min-height: 30rem; 
+    }
+}

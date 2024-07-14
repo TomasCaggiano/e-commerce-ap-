@@ -1,4 +1,5 @@
-.item-list-container{
-    display: flex;
-    justify-content: space-between;
+.item-list-container {
+    display: flex; 
+    justify-content: space-between; 
+    min-height: 30rem; 
 }

@@ -1,24 +1,45 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import './NavBar.css'
-import CartWidget from '../CartWidget/CartWidget';
-import { Link, NavLink } from 'react-router-dom';
-import '../images/logo.png'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
+import './NavBar.css';
 
-function NavBar() {
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsOpen(false); // Cerrar el menú si el ancho es mayor a 768px
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <header className="NavBar">
-  <Link to="/">
-  <img width = {25} src='https://thumbs.dreamstime.com/z/dise%C3%B1o-vectorial-de-logotipo-negro-nike-sports-logo-vector-listo-para-imprimir-ilustraciones-183282273.jpg?ct=jpeg' alt="logo" />
-  </Link>
+    <header className='navBar'>
+      <Link to='/'>
+        Home
+      </Link>
+      <FaBars className='menuIcon' onClick={toggleMenu} />
+      <div className={`menuItems ${isOpen ? 'active' : ''}`}>
     <NavLink to="/category/men's clothing">ropa</NavLink>
     <NavLink to="/category/electronics">electronica</NavLink>
     <NavLink to="/category/jewelery">jewelery</NavLink>
-  <NavLink to="/cart">carrito</NavLink>
-</header>
+    </div>
+        <NavLink to='/cart'>cart</NavLink>
+    </header>
   );
-}
+};
 
 export default NavBar;
 
