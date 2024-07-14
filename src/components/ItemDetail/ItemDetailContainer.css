@@ -24,7 +24,7 @@
     }
 
     .loading {
-        min-height: 30rem; 
+        min-height: 50rem; 
     }
 
     .product-detail img {
@@ -32,6 +32,6 @@
     }
 
     .detail {
-        min-height: 30rem; 
+        min-height: 50rem; 
     }
 }
