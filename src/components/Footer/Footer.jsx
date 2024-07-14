@@ -8,7 +8,7 @@ const Footer = () => {
         
       <div className="acerca-de" >
         <small>acerca de</small>
-        <p><Link to=''>portfolio</Link></p>
+        <p><Link to='https://portfoliotomascaggiano.netlify.app/'>portfolio</Link></p>
         <p><Link to='https://github.com/TomasCaggiano/e-commerce-ap-'>repositorio</Link></p>
       </div>
       <div>
