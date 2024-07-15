@@ -1,4 +1,4 @@
-/* Estilos para pantallas grandes (min-width: 768px) */
+
 @media (min-width: 768px) {
   .navBar {
       display: flex;
@@ -47,7 +47,6 @@
   }
 }
 
-/* Estilos para pantallas pequeñas (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .navBar {
       display: flex;
